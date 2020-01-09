@@ -20,6 +20,11 @@ export default new Router({
                     meta: { title: '系统首页' }
                 },
                 {
+                    path: '/factory',
+                    component: () => import(/* webpackChunkName: "dashboard" */ '../components/page/Factory.vue'),
+                    meta: { title: '厂家信息' }
+                },
+                {
                     path: '/icon',
                     component: () => import(/* webpackChunkName: "icon" */ '../components/page/Icon.vue'),
                     meta: { title: '自定义图标' }
